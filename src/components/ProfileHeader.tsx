@@ -6,7 +6,7 @@ export default function ProfileHeader() {
         <div className="glass-container rounded-full p-1.5 inline-block">
           <div className="w-28 h-28 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple p-1">
             <img
-              src="/avatar.jpg"
+              src="https://ihbzndymkizrpeoawojd.supabase.co/storage/v1/object/sign/Mini%20Site/1.jpeg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85M2IwNGYzYy0zY2RiLTQ4NjAtYWFmYy02MGVjMDYzZTNmYzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNaW5pIFNpdGUvMS5qcGVnIiwiaWF0IjoxNzY1NzUzODg1LCJleHAiOjIwODExMTM4ODV9.cKZEJmb8_ARoTGBvbdWYLTGaP9P_Ef8u8ARoboJZ4Oc"
               alt="Прошинский Владислав"
               className="w-full h-full rounded-full object-cover bg-white"
             />
