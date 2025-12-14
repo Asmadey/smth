@@ -6,7 +6,7 @@ export default function ProfileHeader() {
         <div className="glass-container rounded-full p-1.5 inline-block">
           <div className="w-28 h-28 rounded-full bg-gradient-to-br from-accent-blue to-accent-purple p-1">
             <img
-              src="https://api.dicebear.com/7.x/avataaars/svg?seed=Vladislav"
+              src="/avatar.jpg"
               alt="Прошинский Владислав"
               className="w-full h-full rounded-full object-cover bg-white"
             />
