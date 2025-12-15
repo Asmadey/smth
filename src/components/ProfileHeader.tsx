@@ -1,6 +1,6 @@
 export default function ProfileHeader() {
   return (
-    <div className="glass-container rounded-3xl p-8 text-center mb-6">
+    <div className="p-8 text-center mb-6">
       {/* Avatar with glass frame */}
       <div className="relative inline-block mb-4">
         <div className="glass-container rounded-full p-1.5 inline-block">
