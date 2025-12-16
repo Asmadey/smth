@@ -27,8 +27,8 @@ export default function ProfileHeader({ language, onLanguageChange }: ProfileHea
           onClick={handleLanguageToggle}
           className="language-button px-3 py-2 rounded-xl flex items-center gap-2 transition-all duration-200 hover:scale-105"
         >
-          <span className="text-lg">{language === 'ru' ? '🇷🇺' : '🇬🇧'}</span>
-          <span className="text-sm font-medium text-gray-700">{language === 'ru' ? 'RU' : 'EN'}</span>
+          <span className="text-lg">{language === 'ru' ? '🇬🇧' : '🇷🇺'}</span>
+          <span className="text-sm font-medium text-gray-700">{language === 'ru' ? 'EN' : 'RU'}</span>
         </button>
       </div>
 
