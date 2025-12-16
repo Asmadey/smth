@@ -1,11 +1,23 @@
 interface ToggleSwitchProps {
   activeTab: 'personal' | 'business';
   onTabChange: (tab: 'personal' | 'business') => void;
+  language: 'ru' | 'en';
 }
 
-export default function ToggleSwitch({ activeTab, onTabChange }: ToggleSwitchProps) {
+export default function ToggleSwitch({ activeTab, onTabChange, language }: ToggleSwitchProps) {
+  const texts = {
+    ru: {
+      personal: 'Частным лицам',
+      business: 'Бизнесу'
+    },
+    en: {
+      personal: 'For Individuals',
+      business: 'For Business'
+    }
+  };
+
   return (
-    <div className="white-toggle p-1.5 flex gap-1.5 mb-6">
+    <div className="glass-toggle p-1.5 flex gap-1.5 mb-6">
       <button
         onClick={() => onTabChange('personal')}
         className={`
@@ -13,12 +25,12 @@ export default function ToggleSwitch({ activeTab, onTabChange }: ToggleSwitchPro
           transition-all duration-200 ease-out
           ${
             activeTab === 'personal'
-              ? 'bg-white text-gray-900 shadow-md'
+              ? 'glass-active text-gray-900'
               : 'text-gray-500 hover:text-gray-700'
           }
         `}
       >
-        Частным лицам
+        {texts[language].personal}
       </button>
       <button
         onClick={() => onTabChange('business')}
@@ -27,12 +39,12 @@ export default function ToggleSwitch({ activeTab, onTabChange }: ToggleSwitchPro
           transition-all duration-200 ease-out
           ${
             activeTab === 'business'
-              ? 'bg-white text-gray-900 shadow-md'
+              ? 'glass-active text-gray-900'
               : 'text-gray-500 hover:text-gray-700'
           }
         `}
       >
-        Бизнесу
+        {texts[language].business}
       </button>
     </div>
   );

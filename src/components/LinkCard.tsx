@@ -2,25 +2,22 @@ import { ChevronRight } from 'lucide-react';
 
 interface LinkCardProps {
   icon: React.ReactNode;
-  iconColor: string;
+  iconClass: string;
   title: string;
   description?: string;
   onClick?: () => void;
   href?: string;
 }
 
-export default function LinkCard({ icon, iconColor, title, description, onClick, href }: LinkCardProps) {
+export default function LinkCard({ icon, iconClass, title, description, onClick, href }: LinkCardProps) {
   const content = (
     <>
       <div className="flex items-center gap-4 flex-1">
-        <div
-          className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white"
-          style={{ backgroundColor: iconColor }}
-        >
+        <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white ${iconClass}`}>
           {icon}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="text-base font-semibold text-gray-900 leading-tight">
+          <div className="text-base font-semibold text-gray-800 leading-tight">
             {title}
           </div>
           {description && (
@@ -34,7 +31,7 @@ export default function LinkCard({ icon, iconColor, title, description, onClick,
     </>
   );
 
-  const baseClasses = "white-card w-full px-5 py-4 flex items-center justify-between gap-3 group";
+  const baseClasses = "glass-card w-full px-5 py-4 rounded-2xl flex items-center justify-between gap-3 group";
 
   if (href) {
     return (
