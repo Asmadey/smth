@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ProfileHeader from './components/ProfileHeader';
 import ToggleSwitch from './components/ToggleSwitch';
 import LinkCard from './components/LinkCard';
@@ -18,6 +18,16 @@ import {
 function App() {
   const [activeTab, setActiveTab] = useState<'personal' | 'business'>('personal');
   const [language, setLanguage] = useState<'ru' | 'en'>('ru');
+  const [animateCards, setAnimateCards] = useState(true);
+
+  // Триггер анимации при переключении вкладок
+  useEffect(() => {
+    setAnimateCards(false);
+    const timer = setTimeout(() => {
+      setAnimateCards(true);
+    }, 50);
+    return () => clearTimeout(timer);
+  }, [activeTab]);
 
   // Локализованные данные для вкладки "Частным лицам"
   const personalSections = {
@@ -196,14 +206,15 @@ function App() {
         {/* Link Cards */}
         <div className="space-y-3 mb-12">
           {sections.map((section, index) => (
-            <LinkCard
-              key={`${activeTab}-${language}-${index}`}
-              icon={section.icon}
-              iconClass={section.iconClass}
-              title={section.title}
-              description={section.description}
-              href={section.href}
-            />
+            <div key={`${activeTab}-${language}-${index}`} className={animateCards ? 'card-animate' : ''}>
+              <LinkCard
+                icon={section.icon}
+                iconClass={section.iconClass}
+                title={section.title}
+                description={section.description}
+                href={section.href}
+              />
+            </div>
           ))}
         </div>
 
