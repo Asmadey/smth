@@ -5,7 +5,7 @@
 
 // Workshop - Three person silhouettes (purple to blue gradient)
 export const WorkshopIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_workshop" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#AF52DE"/>
@@ -37,7 +37,7 @@ export const WorkshopIcon = () => (
 
 // Mentorship/Consulting - Magnifying glass with gear and chart (gold-yellow to orange gradient)
 export const MentorshipIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_mentor" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#FFD60A"/>
@@ -71,7 +71,7 @@ export const MentorshipIcon = () => (
 
 // Telegram - Paper airplane (light blue to blue gradient)
 export const TelegramIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_telegram" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5AC8FA"/>
@@ -94,7 +94,7 @@ export const TelegramIcon = () => (
 
 // Message - Chat bubble (purple to pink gradient)
 export const MessageIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_message" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#a855f7"/>
@@ -119,7 +119,7 @@ export const MessageIcon = () => (
 
 // About - User profile (teal to blue gradient)
 export const AboutIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_about" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#14b8a6"/>
@@ -144,7 +144,7 @@ export const AboutIcon = () => (
 
 // Phone + Calendar - Phone with calendar checkmark (blue to teal gradient)
 export const PhoneCallIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_phone" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#007AFF"/>
@@ -173,7 +173,7 @@ export const PhoneCallIcon = () => (
 
 // Team Workshop - Three person silhouettes (purple to blue gradient)
 export const TeamWorkshopIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_team" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#AF52DE"/>
@@ -205,7 +205,7 @@ export const TeamWorkshopIcon = () => (
 
 // Consulting - Magnifying glass with gear and chart (gold-yellow to orange gradient)
 export const ConsultingIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_consulting" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#FFD60A"/>
@@ -239,7 +239,7 @@ export const ConsultingIcon = () => (
 
 // AI Assistant - Head profile with circuit brain (blue-violet to magenta-violet gradient)
 export const AIAssistantIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_ai" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5856D6"/>
@@ -274,7 +274,7 @@ export const AIAssistantIcon = () => (
 
 // Portfolio - Briefcase with checkmark badge (cyan to blue gradient)
 export const PortfolioIcon = () => (
-  <svg width="16" height="16" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_portfolio" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5AC8FA"/>
