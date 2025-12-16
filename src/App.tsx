@@ -1,8 +1,19 @@
 import { useState } from 'react';
-import { Users, Send, User, FolderKanban, MessageCircle, Calendar, Search } from 'lucide-react';
 import ProfileHeader from './components/ProfileHeader';
 import ToggleSwitch from './components/ToggleSwitch';
 import LinkCard from './components/LinkCard';
+import {
+  WorkshopIcon,
+  MentorshipIcon,
+  TelegramIcon,
+  MessageIcon,
+  AboutIcon,
+  PhoneCallIcon,
+  TeamWorkshopIcon,
+  ConsultingIcon,
+  AIAssistantIcon,
+  PortfolioIcon
+} from './components/icons/GradientIcons';
 
 function App() {
   const [activeTab, setActiveTab] = useState<'personal' | 'business'>('personal');
@@ -12,36 +23,36 @@ function App() {
   const personalSections = {
     ru: [
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-orange',
+        icon: <WorkshopIcon />,
+        iconClass: '',
         title: 'Воркшоп "ИИ для чайников"',
         description: 'Практический курс по основам работы с ИИ-инструментами',
         href: '#workshop-basics',
       },
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-gold',
+        icon: <MentorshipIcon />,
+        iconClass: '',
         title: 'Менторство по ИИ',
         description: 'Индивидуальное сопровождение по ИИ для собственников и менеджеров',
         href: '#mentorship',
       },
       {
-        icon: <MessageCircle size={20} />,
-        iconClass: 'icon-gradient-blue',
+        icon: <TelegramIcon />,
+        iconClass: '',
         title: 'Telegram-Канал про ИИ',
         description: 'Новости, ИИ-кейсы и практические советы каждый день',
         href: 'https://t.me/your_channel',
       },
       {
-        icon: <Send size={20} />,
-        iconClass: 'icon-gradient-purple',
+        icon: <MessageIcon />,
+        iconClass: '',
         title: 'Написать мне в Telegram',
         description: 'Обсудим ваш проект или задачу',
         href: 'https://t.me/your_username',
       },
       {
-        icon: <User size={20} />,
-        iconClass: 'icon-gradient-teal',
+        icon: <AboutIcon />,
+        iconClass: '',
         title: 'Обо мне',
         description: 'Опыт работы, кейсы и достижения',
         href: '#about',
@@ -49,36 +60,36 @@ function App() {
     ],
     en: [
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-orange',
+        icon: <WorkshopIcon />,
+        iconClass: '',
         title: 'AI for Beginners Workshop',
         description: 'Practical course on the basics of AI tools',
         href: '#workshop-basics',
       },
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-gold',
+        icon: <MentorshipIcon />,
+        iconClass: '',
         title: 'AI Mentorship',
         description: 'Individual AI support for business owners and managers',
         href: '#mentorship',
       },
       {
-        icon: <MessageCircle size={20} />,
-        iconClass: 'icon-gradient-blue',
+        icon: <TelegramIcon />,
+        iconClass: '',
         title: 'AI Telegram Channel',
         description: 'News, AI cases, and practical tips every day',
         href: 'https://t.me/your_channel',
       },
       {
-        icon: <Send size={20} />,
-        iconClass: 'icon-gradient-purple',
+        icon: <MessageIcon />,
+        iconClass: '',
         title: 'Message me on Telegram',
         description: 'Let\'s discuss your project or task',
         href: 'https://t.me/your_username',
       },
       {
-        icon: <User size={20} />,
-        iconClass: 'icon-gradient-teal',
+        icon: <AboutIcon />,
+        iconClass: '',
         title: 'About Me',
         description: 'Work experience, cases, and achievements',
         href: '#about',
@@ -90,36 +101,36 @@ function App() {
   const businessSections = {
     ru: [
       {
-        icon: <Calendar size={20} />,
-        iconClass: 'icon-gradient-green',
+        icon: <PhoneCallIcon />,
+        iconClass: '',
         title: 'Назначить звонок',
         description: 'Обсудим возможности внедрения ИИ',
         href: '#call',
       },
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-indigo',
+        icon: <TeamWorkshopIcon />,
+        iconClass: '',
         title: 'Воркшоп "ИИ для команд"',
         description: 'Обучение сотрудников эффективной работе с ИИ',
         href: '#workshop-teams',
       },
       {
-        icon: <Search size={20} />,
-        iconClass: 'icon-gradient-gold',
+        icon: <ConsultingIcon />,
+        iconClass: '',
         title: 'ИИ консалтинг',
         description: 'Аудит процессов и разработка стратегии внедрения ИИ',
         href: 'https://mentorclub.ru',
       },
       {
-        icon: <User size={20} />,
-        iconClass: 'icon-gradient-indigo',
+        icon: <AIAssistantIcon />,
+        iconClass: '',
         title: 'ИИ-помощники для руководителей',
         description: 'Персональные ИИ-ассистенты для топ-менеджмента',
         href: '#ai-assistants',
       },
       {
-        icon: <FolderKanban size={20} />,
-        iconClass: 'icon-gradient-teal',
+        icon: <PortfolioIcon />,
+        iconClass: '',
         title: 'Портфолио ИИ кейсов',
         description: 'Реальные проекты с результатами от внедрения',
         href: '#portfolio',
@@ -127,36 +138,36 @@ function App() {
     ],
     en: [
       {
-        icon: <Calendar size={20} />,
-        iconClass: 'icon-gradient-green',
+        icon: <PhoneCallIcon />,
+        iconClass: '',
         title: 'Schedule a Call',
         description: 'Discuss AI implementation opportunities',
         href: '#call',
       },
       {
-        icon: <Users size={20} />,
-        iconClass: 'icon-gradient-indigo',
+        icon: <TeamWorkshopIcon />,
+        iconClass: '',
         title: 'AI for Teams Workshop',
         description: 'Training employees in effective AI use',
         href: '#workshop-teams',
       },
       {
-        icon: <Search size={20} />,
-        iconClass: 'icon-gradient-gold',
+        icon: <ConsultingIcon />,
+        iconClass: '',
         title: 'AI Consulting',
         description: 'Process audit and AI implementation strategy development',
         href: 'https://mentorclub.ru',
       },
       {
-        icon: <User size={20} />,
-        iconClass: 'icon-gradient-indigo',
+        icon: <AIAssistantIcon />,
+        iconClass: '',
         title: 'AI Assistants for Executives',
         description: 'Personal AI assistants for top management',
         href: '#ai-assistants',
       },
       {
-        icon: <FolderKanban size={20} />,
-        iconClass: 'icon-gradient-teal',
+        icon: <PortfolioIcon />,
+        iconClass: '',
         title: 'AI Case Portfolio',
         description: 'Real projects with implementation results',
         href: '#portfolio',

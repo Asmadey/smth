@@ -15,27 +15,20 @@ export default function ProfileHeader({ language, onLanguageChange }: ProfileHea
     }
   };
 
+  const handleLanguageToggle = () => {
+    onLanguageChange(language === 'ru' ? 'en' : 'ru');
+  };
+
   return (
     <div className="text-center mb-8 pt-8 relative">
-      {/* Language Switcher */}
-      <div className="absolute right-0 top-8 flex gap-2">
+      {/* Single Language Switcher - shows current language */}
+      <div className="absolute right-0 top-8">
         <button
-          onClick={() => onLanguageChange('ru')}
-          className={`language-button px-3 py-2 rounded-xl flex items-center gap-2 ${
-            language === 'ru' ? 'ring-2 ring-blue-400' : ''
-          }`}
+          onClick={handleLanguageToggle}
+          className="language-button px-3 py-2 rounded-xl flex items-center gap-2 transition-all duration-200 hover:scale-105"
         >
-          <span className="text-lg">🇷🇺</span>
-          <span className="text-sm font-medium text-gray-700">RU</span>
-        </button>
-        <button
-          onClick={() => onLanguageChange('en')}
-          className={`language-button px-3 py-2 rounded-xl flex items-center gap-2 ${
-            language === 'en' ? 'ring-2 ring-blue-400' : ''
-          }`}
-        >
-          <span className="text-lg">🇬🇧</span>
-          <span className="text-sm font-medium text-gray-700">EN</span>
+          <span className="text-lg">{language === 'ru' ? '🇷🇺' : '🇬🇧'}</span>
+          <span className="text-sm font-medium text-gray-700">{language === 'ru' ? 'RU' : 'EN'}</span>
         </button>
       </div>
 
