@@ -71,14 +71,14 @@ export const MentorshipIcon = () => (
 
 // Telegram - Paper airplane (light blue to blue gradient)
 export const TelegramIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="41" height="41" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_telegram" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5AC8FA"/>
         <stop offset="100%" stopColor="#007AFF"/>
       </linearGradient>
       <filter id="glow_telegram" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
         <feMerge>
           <feMergeNode in="coloredBlur"/>
           <feMergeNode in="SourceGraphic"/>
