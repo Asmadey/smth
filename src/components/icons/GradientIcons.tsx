@@ -142,15 +142,19 @@ export const AboutIcon = () => (
 
 // Business section icons
 
-// Phone Call - Phone icon from external SVG
+// Phone Call - Minimized phone icon (38x38)
 export const PhoneCallIcon = () => (
-  <img
-    src="https://ihbzndymkizrpeoawojd.supabase.co/storage/v1/object/sign/Mini%20Site/call.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85M2IwNGYzYy0zY2RiLTQ4NjAtYWFmYy02MGVjMDYzZTNmYzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNaW5pIFNpdGUvY2FsbC5zdmciLCJpYXQiOjE3NjY0MjkyMTAsImV4cCI6MjA4MTc4OTIxMH0.zKypFUX3t1DJ8iXCeEviCU9YyJzyIiQ9vUNGOdNHZPQ"
-    alt="Phone Call"
-    width="38"
-    height="38"
-    style={{ filter: 'drop-shadow(0 0 4px rgba(0, 122, 255, 0.3))' }}
-  />
+  <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad_phone" x1="0" y1="0" x2="24" y2="24">
+        <stop offset="0%" stopColor="#007AFF"/><stop offset="100%" stopColor="#34C759"/>
+      </linearGradient>
+      <filter id="glow_phone"><feGaussianBlur stdDeviation="2"/></filter>
+    </defs>
+    <g filter="url(#glow_phone)">
+      <path d="M20 15.5c-1.2 0-2.3-.2-3.4-.6-.3-.1-.7 0-1 .2l-2 2c-2.8-1.4-5-3.6-6.4-6.4l2-2c.3-.3.4-.7.2-1-.4-1-.6-2.2-.6-3.4 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.8c0-.6-.4-1-1-1z" fill="url(#grad_phone)" opacity=".95"/>
+    </g>
+  </svg>
 );
 
 // Team Workshop - Three person silhouettes (purple to blue gradient)
@@ -219,15 +223,20 @@ export const ConsultingIcon = () => (
   </svg>
 );
 
-// AI Assistant - Brain icon from external SVG
+// AI Assistant - Minimized brain icon (38x38)
 export const AIAssistantIcon = () => (
-  <img
-    src="https://ihbzndymkizrpeoawojd.supabase.co/storage/v1/object/sign/Mini%20Site/brain.svg?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV85M2IwNGYzYy0zY2RiLTQ4NjAtYWFmYy02MGVjMDYzZTNmYzIiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJNaW5pIFNpdGUvYnJhaW4uc3ZnIiwiaWF0IjoxNzY2NDI4OTM0LCJleHAiOjIwODE3ODg5MzR9.zl164Nw_oJD8XWg0DPZW049Tdp-pMeEGyZhBdxyu6HU"
-    alt="AI Assistant"
-    width="38"
-    height="38"
-    style={{ filter: 'drop-shadow(0 0 4px rgba(88, 86, 214, 0.3))' }}
-  />
+  <svg width="38" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="grad_ai" x1="12" y1="0" x2="12" y2="24">
+        <stop offset="0%" stopColor="#5856D6"/><stop offset="100%" stopColor="#AF52DE"/>
+      </linearGradient>
+      <filter id="glow_ai"><feGaussianBlur stdDeviation="2"/></filter>
+    </defs>
+    <g filter="url(#glow_ai)">
+      <path d="M12 2c-2.2 0-4 1.1-5 2.8-.6-.5-1.5-.5-2.2 0C3.8 5.5 3 6.8 3 8.2c0 .7.2 1.4.6 2-.4.5-.6 1.2-.6 1.9 0 1.2.5 2.3 1.2 3.1-.3.5-.4 1.2-.2 1.8.4 1.2 1.5 2 2.8 2h1.1c1.1 2.2 2.8 3.8 5.1 3.8s4-1.6 5.1-3.8h1.1c1.3 0 2.4-.8 2.8-2 .2-.6.1-1.3-.2-1.8.7-.8 1.2-1.9 1.2-3.1 0-.7-.2-1.4-.6-1.9.4-.6.6-1.3.6-2 0-1.4-.8-2.7-1.8-3.4-.7-.5-1.6-.5-2.2 0C16 3.1 14.2 2 12 2z" fill="url(#grad_ai)" opacity=".95"/>
+      <path d="M9 9c-.6 0-1 .4-1 1s.4 1 1 1m-1 3c-.6 0-1 .4-1 1s.4 1 1 1m1 2c-.6 0-1 .4-1 1m6-8c.6 0 1 .4 1 1s-.4 1-1 1m1 3c.6 0 1 .4 1 1s-.4 1-1 1m-1 2c.6 0 1 .4 1 1m-4-8c0-.6.4-1 1-1s1 .4 1 1m-2 4c0-.6.4-1 1-1s1 .4 1 1" stroke="#fff" strokeWidth=".8" strokeLinecap="round" opacity=".6"/>
+    </g>
+  </svg>
 );
 
 // Portfolio - Briefcase with checkmark badge (cyan to blue gradient)
