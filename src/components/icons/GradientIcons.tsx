@@ -71,7 +71,7 @@ export const MentorshipIcon = () => (
 
 // Telegram - Paper airplane (light blue to blue gradient)
 export const TelegramIcon = () => (
-  <svg width="41" height="41" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="38" height="38" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_telegram" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5AC8FA"/>
@@ -142,9 +142,9 @@ export const AboutIcon = () => (
 
 // Business section icons
 
-// Phone + Calendar - Phone with calendar checkmark (blue to teal gradient)
+// Phone Call - Classic phone handset (blue to teal gradient)
 export const PhoneCallIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_phone" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#007AFF"/>
@@ -159,14 +159,13 @@ export const PhoneCallIcon = () => (
       </filter>
     </defs>
     <g filter="url(#glow_phone)">
-      {/* Phone handset tilted */}
-      <path d="M14 8c-1 0-2 1-2 2v4c0 4 2 8 6 10 2 1 4 2 6 2h4c1 0 2-1 2-2v-6l-4-2-2 2c-2-1-4-2-6-4-1-2-2-4-2-6l2-2-2-4-2 6z"
-            fill="url(#grad_phone)" opacity="0.95" transform="rotate(-25 20 18)"/>
+      {/* Phone handset - modern style */}
+      <path d="M38 30c-1 2-3 4-6 4-3 0-7-1-11-3-4-2-8-5-11-9-3-4-5-8-5-11 0-3 2-5 4-6 1-1 2-1 3 0l4 6c0 1 0 2-1 3l-2 1c1 2 3 4 5 6s4 4 6 5l1-2c1-1 2-1 3-1l6 4c1 1 1 2 0 3z"
+            fill="url(#grad_phone)" opacity="0.95"/>
 
-      {/* Calendar with checkmark */}
-      <rect x="26" y="22" width="16" height="18" rx="3" fill="url(#grad_phone)" opacity="0.9"/>
-      <rect x="26" y="22" width="16" height="5" rx="3" fill="url(#grad_phone)" opacity="1"/>
-      <path d="M30 30l3 3 6-6" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      {/* Signal waves */}
+      <path d="M32 12c2 2 3 4 3 7M28 14c1 1 2 3 2 5"
+            stroke="url(#grad_phone)" strokeWidth="2" strokeLinecap="round" opacity="0.8"/>
     </g>
   </svg>
 );
@@ -237,9 +236,9 @@ export const ConsultingIcon = () => (
   </svg>
 );
 
-// AI Assistant - Head profile with circuit brain (blue-violet to magenta-violet gradient)
+// AI Assistant - Brain icon (blue-violet to magenta-violet gradient)
 export const AIAssistantIcon = () => (
-  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <defs>
       <linearGradient id="grad_ai" x1="24" y1="0" x2="24" y2="48" gradientUnits="userSpaceOnUse">
         <stop offset="0%" stopColor="#5856D6"/>
@@ -254,20 +253,21 @@ export const AIAssistantIcon = () => (
       </filter>
     </defs>
     <g filter="url(#glow_ai)">
-      {/* Head profile facing right */}
-      <path d="M18 8c-6 0-10 4-10 10v8c0 4 2 8 6 10l2 4h8l2-4c4-2 6-6 6-10v-8c0-6-4-10-10-10h-4z"
+      {/* Brain shape */}
+      <path d="M24 6c-4 0-7 2-9 5-1-1-3-1-4 0-2 1-3 3-3 5 0 1 0 2 1 3-1 1-1 2-1 3 0 2 1 4 2 5-1 1-1 3 0 4 1 2 3 3 5 3h2c2 4 5 7 9 7s7-3 9-7h2c2 0 4-1 5-3 1-1 1-3 0-4 1-1 2-3 2-5 0-1 0-2-1-3 1-1 1-2 1-3 0-2-1-4-3-5-1-1-3-1-4 0-2-3-5-5-9-5z"
             fill="url(#grad_ai)" opacity="0.95"/>
 
-      {/* Circuit brain inside */}
-      <circle cx="22" cy="20" r="2" fill="white" opacity="0.9"/>
-      <rect x="20" y="24" width="4" height="3" rx="1" fill="white" opacity="0.8"/>
+      {/* Brain details - left hemisphere */}
+      <path d="M18 16c-1 0-2 1-2 2s1 2 2 2M16 22c-1 0-2 1-2 2s1 2 2 2M18 28c-1 0-2 1-2 2"
+            stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
 
-      {/* Circuit lines */}
-      <path d="M22 22v2m-4-2h2m4 0h2m-6-4h2m4 0h2" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
-      <circle cx="18" cy="16" r="1" fill="white" opacity="0.8"/>
-      <circle cx="26" cy="16" r="1" fill="white" opacity="0.8"/>
-      <circle cx="18" cy="20" r="1" fill="white" opacity="0.8"/>
-      <circle cx="26" cy="20" r="1" fill="white" opacity="0.8"/>
+      {/* Brain details - right hemisphere */}
+      <path d="M30 16c1 0 2 1 2 2s-1 2-2 2M32 22c1 0 2 1 2 2s-1 2-2 2M30 28c1 0 2 1 2 2"
+            stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
+
+      {/* Central details */}
+      <path d="M22 18c0-1 1-2 2-2s2 1 2 2M22 24c0-1 1-2 2-2s2 1 2 2"
+            stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.7"/>
     </g>
   </svg>
 );
