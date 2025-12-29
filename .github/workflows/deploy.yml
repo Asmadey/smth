@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main, claude/setup-liquid-glass-ui-mdT4S]
+    branches: [main, claude/setup-liquid-glass-ui-mdT4S, claude/add-claude-mem-plugin-QUTT5]
   workflow_dispatch:
 
 permissions:

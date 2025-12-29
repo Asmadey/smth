@@ -1,16 +1,22 @@
+import { useState } from 'react';
+import { Play } from 'lucide-react';
+import VideoPopup from './VideoPopup';
+
 interface ProfileHeaderProps {
   language: 'ru' | 'en';
   onLanguageChange: (lang: 'ru' | 'en') => void;
 }
 
 export default function ProfileHeader({ language, onLanguageChange }: ProfileHeaderProps) {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+
   const texts = {
     ru: {
-      name: 'Прошинский Владислав',
-      bio: 'Эксперт по внедрению ИИ в бизнес. Помогаю эффективно использовать ИИ для решения задач'
+      name: 'Прошинский Влад',
+      bio: 'Внедряю ИИ в бизнес: то, что занимало дни и часы, работает за минуты и без ошибок'
     },
     en: {
-      name: 'Vladislav Proshinskiy',
+      name: 'Proshinsky Vlad',
       bio: 'AI Business Integration Expert. Helping to effectively use AI to solve problems'
     }
   };
@@ -32,7 +38,7 @@ export default function ProfileHeader({ language, onLanguageChange }: ProfileHea
         </button>
       </div>
 
-      {/* Avatar with white border */}
+      {/* Avatar with white border and play button */}
       <div className="relative inline-block mb-6">
         <div className="w-32 h-32 rounded-full bg-white p-2 shadow-lg">
           <img
@@ -41,7 +47,23 @@ export default function ProfileHeader({ language, onLanguageChange }: ProfileHea
             className="w-full h-full rounded-full object-cover"
           />
         </div>
+
+        {/* YouTube-style play button */}
+        <button
+          onClick={() => setIsVideoOpen(true)}
+          className="absolute bottom-0 right-0 bg-red-600 hover:bg-red-700 w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-200 hover:scale-110"
+          aria-label="Play video"
+        >
+          <Play className="w-6 h-6 text-white ml-0.5" fill="white" />
+        </button>
       </div>
+
+      {/* Video Popup */}
+      <VideoPopup
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        videoUrl="https://www.youtube.com/watch?v=klgd0zOmYp4"
+      />
 
       {/* Name */}
       <h1 className="text-3xl font-bold text-gray-800 mb-3">

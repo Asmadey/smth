@@ -35,7 +35,7 @@ function App() {
       {
         icon: <WorkshopIcon />,
         iconClass: '',
-        title: 'Воркшоп "ИИ для чайников"',
+        title: 'Курс «ИИ для чайников»',
         description: 'Практический курс по основам работы с ИИ-инструментами',
         href: '#workshop-basics',
       },
@@ -43,22 +43,22 @@ function App() {
         icon: <MentorshipIcon />,
         iconClass: '',
         title: 'Менторство по ИИ',
-        description: 'Индивидуальное сопровождение по ИИ для собственников и менеджеров',
+        description: 'Автоматизируем вашу рутину с ИИ',
         href: '#mentorship',
       },
       {
         icon: <TelegramIcon />,
         iconClass: '',
         title: 'Telegram-Канал про ИИ',
-        description: 'Новости, ИИ-кейсы и практические советы каждый день',
-        href: 'https://t.me/your_channel',
+        description: 'Новости, кейсы и практические советы',
+        href: 'https://t.me/AImademyday',
       },
       {
         icon: <MessageIcon />,
         iconClass: '',
         title: 'Написать мне в Telegram',
         description: 'Обсудим ваш проект или задачу',
-        href: 'https://t.me/your_username',
+        href: 'https://t.me/asmadeyi',
       },
       {
         icon: <AboutIcon />,
@@ -72,7 +72,7 @@ function App() {
       {
         icon: <WorkshopIcon />,
         iconClass: '',
-        title: 'AI for Beginners Workshop',
+        title: 'AI for Beginners Course',
         description: 'Practical course on the basics of AI tools',
         href: '#workshop-basics',
       },
@@ -80,22 +80,22 @@ function App() {
         icon: <MentorshipIcon />,
         iconClass: '',
         title: 'AI Mentorship',
-        description: 'Individual AI support for business owners and managers',
+        description: 'Automate your routine with AI',
         href: '#mentorship',
       },
       {
         icon: <TelegramIcon />,
         iconClass: '',
         title: 'AI Telegram Channel',
-        description: 'News, AI cases, and practical tips every day',
-        href: 'https://t.me/your_channel',
+        description: 'News, cases, and practical tips',
+        href: 'https://t.me/AImademyday',
       },
       {
         icon: <MessageIcon />,
         iconClass: '',
         title: 'Message me on Telegram',
         description: 'Let\'s discuss your project or task',
-        href: 'https://t.me/your_username',
+        href: 'https://t.me/asmadeyi',
       },
       {
         icon: <AboutIcon />,
@@ -115,13 +115,13 @@ function App() {
         iconClass: '',
         title: 'Назначить звонок',
         description: 'Обсудим возможности внедрения ИИ',
-        href: '#call',
+        href: 'https://cal.com/proshinsky/15min',
       },
       {
         icon: <TeamWorkshopIcon />,
         iconClass: '',
-        title: 'Воркшоп "ИИ для команд"',
-        description: 'Обучение сотрудников эффективной работе с ИИ',
+        title: 'Обучение команд',
+        description: 'ИИ-навыки для роста эффективности сотрудников',
         href: '#workshop-teams',
       },
       {
@@ -134,8 +134,8 @@ function App() {
       {
         icon: <AIAssistantIcon />,
         iconClass: '',
-        title: 'ИИ-помощники для руководителей',
-        description: 'Персональные ИИ-ассистенты для топ-менеджмента',
+        title: 'ИИ-агенты для руководителей',
+        description: 'Автоматизация рутины топ-менеджеров',
         href: '#ai-assistants',
       },
       {
@@ -190,8 +190,8 @@ function App() {
     : businessSections[language];
 
   const copyrightText = language === 'ru'
-    ? '© 2026 Прошинский Владислав'
-    : '© 2026 Vladislav Proshinskiy';
+    ? '© 2026 Прошинский Влад'
+    : '© 2026 Proshinsky Vlad';
 
   return (
     <div className="min-h-screen">
